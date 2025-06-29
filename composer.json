@@ -36,6 +36,6 @@
         "magento/module-theme": "^101.1.6",
         "magento/module-ui": "^101.2.6",
         "magento/module-shipping": "^100.4.6",
-        "snake-tn/module-shipping-core": "3.2.0"
+        "gls-m2-extension/module-shipping-core": "3.2.0"
     }
 }
