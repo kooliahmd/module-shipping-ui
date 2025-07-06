@@ -27,8 +27,8 @@ class Collection extends TrackCollection implements SearchResultInterface
         LoggerInterface $logger,
         FetchStrategyInterface $fetchStrategy,
         ManagerInterface $eventManager,
-        AdapterInterface $connection = null,
-        AbstractDb $resource = null
+        ?AdapterInterface $connection = null,
+        ?AbstractDb $resource = null
     ) {
         parent::__construct($entityFactory, $logger, $fetchStrategy, $eventManager, $connection, $resource);
 
@@ -40,7 +40,7 @@ class Collection extends TrackCollection implements SearchResultInterface
      */
     private $aggregations;
 
-    public function setItems(array $items = null)
+    public function setItems(?array $items = null)
     {
         return $this;
     }
